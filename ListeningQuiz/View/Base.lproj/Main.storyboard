@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiA-9m-5Er">
-                                <rect key="frame" x="100" y="685" width="190" height="47"/>
+                                <rect key="frame" x="130" y="685" width="130" height="47"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Start">
@@ -44,8 +44,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lgI-kf-15u" firstAttribute="top" secondItem="e4c-JM-9xr" secondAttribute="bottom" constant="80" id="1en-CR-iDq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AiA-9m-5Er" secondAttribute="trailing" constant="100" id="BIz-x7-1IR"/>
-                            <constraint firstItem="AiA-9m-5Er" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="J0Y-q6-PEs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AiA-9m-5Er" secondAttribute="trailing" constant="130" id="BIz-x7-1IR"/>
+                            <constraint firstItem="AiA-9m-5Er" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="J0Y-q6-PEs"/>
                             <constraint firstItem="lgI-kf-15u" firstAttribute="leading" secondItem="e4c-JM-9xr" secondAttribute="leading" id="OPf-54-fPe"/>
                             <constraint firstItem="AiA-9m-5Er" firstAttribute="top" secondItem="lgI-kf-15u" secondAttribute="bottom" constant="68" id="RPp-er-jUI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e4c-JM-9xr" secondAttribute="trailing" constant="50" id="lYO-JY-zgV"/>
@@ -329,7 +329,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-3T-fAU">
-                                <rect key="frame" x="120" y="702" width="150" height="48"/>
+                                <rect key="frame" x="130" y="672" width="130" height="48"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Menu">
@@ -344,14 +344,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="J35-Oz-sU2" firstAttribute="top" secondItem="HHs-bI-OR5" secondAttribute="top" constant="60" id="2QV-ft-1sJ"/>
-                            <constraint firstItem="HHs-bI-OR5" firstAttribute="trailing" secondItem="XwK-3T-fAU" secondAttribute="trailing" constant="120" id="3nh-Ta-2Mf"/>
+                            <constraint firstItem="HHs-bI-OR5" firstAttribute="trailing" secondItem="XwK-3T-fAU" secondAttribute="trailing" constant="130" id="3nh-Ta-2Mf"/>
                             <constraint firstItem="HHs-bI-OR5" firstAttribute="trailing" secondItem="JfD-eI-tCF" secondAttribute="trailing" constant="60" id="ErT-AW-khd"/>
                             <constraint firstItem="JfD-eI-tCF" firstAttribute="leading" secondItem="HHs-bI-OR5" secondAttribute="leading" constant="60" id="GZb-qV-7E0"/>
                             <constraint firstItem="J35-Oz-sU2" firstAttribute="leading" secondItem="HHs-bI-OR5" secondAttribute="leading" constant="60" id="X5Z-D1-3FB"/>
                             <constraint firstItem="gvZ-MV-ieW" firstAttribute="top" secondItem="JfD-eI-tCF" secondAttribute="bottom" constant="20" id="c7r-uB-Ia1"/>
-                            <constraint firstItem="HHs-bI-OR5" firstAttribute="bottom" secondItem="XwK-3T-fAU" secondAttribute="bottom" constant="60" id="dBm-tA-RrI"/>
+                            <constraint firstItem="HHs-bI-OR5" firstAttribute="bottom" secondItem="XwK-3T-fAU" secondAttribute="bottom" constant="90" id="dBm-tA-RrI"/>
                             <constraint firstItem="HHs-bI-OR5" firstAttribute="trailing" secondItem="J35-Oz-sU2" secondAttribute="trailing" constant="60" id="hFh-D1-geW"/>
-                            <constraint firstItem="XwK-3T-fAU" firstAttribute="leading" secondItem="HHs-bI-OR5" secondAttribute="leading" constant="120" id="ifA-c4-ti4"/>
+                            <constraint firstItem="XwK-3T-fAU" firstAttribute="leading" secondItem="HHs-bI-OR5" secondAttribute="leading" constant="130" id="ifA-c4-ti4"/>
                             <constraint firstItem="HHs-bI-OR5" firstAttribute="trailing" secondItem="gvZ-MV-ieW" secondAttribute="trailing" constant="70" id="koK-v2-vke"/>
                             <constraint firstItem="gvZ-MV-ieW" firstAttribute="leading" secondItem="HHs-bI-OR5" secondAttribute="leading" constant="70" id="xMP-0b-U1i"/>
                             <constraint firstItem="JfD-eI-tCF" firstAttribute="top" secondItem="J35-Oz-sU2" secondAttribute="bottom" constant="15" id="xTs-xk-fIa"/>

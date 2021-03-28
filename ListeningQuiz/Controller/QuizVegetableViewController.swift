@@ -28,10 +28,10 @@ class QuizVegetableViewController: UIViewController {
         super.viewDidLoad()
         //題目打亂
         quizVegetableArray.shuffle()
-        speedSlider.value = 0.75
-        speedSlider.maximumValue = 1
-        speedSlider.minimumValue = 0.5
-        rateLabel.text = "0.75"
+        speedSlider.value = 0.5
+        speedSlider.maximumValue = 0.75
+        speedSlider.minimumValue = 0.25
+        rateLabel.text = "\(speedSlider.value)"
         //隱藏正確解答
         correctAnswer.isHidden = true
         //隱藏目前得分
@@ -66,9 +66,8 @@ class QuizVegetableViewController: UIViewController {
         //發聲器讀取的文字是correctAnswer，若沒資料就預設顯示“answer”
         let speechUtterance = AVSpeechUtterance(string: correctAnswer.text ?? "answer")
         let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(speechUtterance)
-        //語速無法調整，為什麼？
         speechUtterance.rate = speedSlider.value
+        synthesizer.speak(speechUtterance)
     }
     
     //按下選項同時計算分數
