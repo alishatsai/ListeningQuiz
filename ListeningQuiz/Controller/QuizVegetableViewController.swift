@@ -90,7 +90,7 @@ class QuizVegetableViewController: UIViewController {
         //判斷是否作答完所有題目
         if currentQuizNumber == quizVegetableArray.count {
             print("題目作答結束，總分\(point)")
-            //作答結束的時候，經由id是“VegetableResult”的segue連到另一個controller
+            //作答結束的時候，經由id是“VegetableResult”的segue連到另一個controller，會觸發prepare
             performSegue(withIdentifier: "VegetableResult", sender: sender)
         }else {
             //沒回答完繼續載入下一題

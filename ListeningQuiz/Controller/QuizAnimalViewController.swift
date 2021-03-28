@@ -90,7 +90,7 @@ class QuizAnimalViewController: UIViewController {
         //判斷是否作答完所有題目
         if currentQuizNumber == quizAnimalArray.count {
             print("題目作答結束，總分\(point)")
-            //作答結束的時候，經由id是“AnimalResult”的segue連到另一個controller
+            //作答結束的時候，經由id是“AnimalResult”的segue連到另一個controller，會觸發prepare
             performSegue(withIdentifier: "AnimalResult", sender: sender)
         }else {
             //沒回答完繼續載入下一題

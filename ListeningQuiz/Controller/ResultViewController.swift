@@ -14,7 +14,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
     
-    //獲取前一頁的point總分
+    //為了讓Quiz頁面的point總分傳值到Result頁面，point型別是Int
     var score : Int!
     
     override func viewDidLoad() {
