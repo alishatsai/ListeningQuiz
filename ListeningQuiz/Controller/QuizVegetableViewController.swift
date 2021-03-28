@@ -36,10 +36,10 @@ class QuizVegetableViewController: UIViewController {
         correctAnswer.isHidden = true
         //隱藏目前得分
         currentPointLabel.isHidden = true
-        loadTest(quizNumber: currentQuizNumber)
+        loadQuiz(quizNumber: currentQuizNumber)
     }
     //載入題目
-    func loadTest(quizNumber:Int){
+    func loadQuiz(quizNumber:Int){
         
         let quizItem = quizVegetableArray[quizNumber]
         var answerOptions = quizItem.answers
@@ -66,6 +66,7 @@ class QuizVegetableViewController: UIViewController {
         //發聲器讀取的文字是correctAnswer，若沒資料就預設顯示“answer”
         let speechUtterance = AVSpeechUtterance(string: correctAnswer.text ?? "answer")
         let synthesizer = AVSpeechSynthesizer()
+        //必須先rate再speak
         speechUtterance.rate = speedSlider.value
         synthesizer.speak(speechUtterance)
     }
@@ -92,7 +93,7 @@ class QuizVegetableViewController: UIViewController {
             performSegue(withIdentifier: "VegetableResult", sender: sender)
         }else {
             //沒回答完繼續載入下一題
-            loadTest(quizNumber: currentQuizNumber)
+            loadQuiz(quizNumber: currentQuizNumber)
         }
     }
     
