@@ -51,7 +51,7 @@ class ResultViewController: UIViewController {
             print("default")
         }
     }
-    //回到主題頁面
+    //回到選單
     @IBAction func returnTopicPage(_ sender: Any) {
         let  vc =  self.navigationController?.viewControllers[1]
         self.navigationController?.popToViewController(vc!, animated: true)

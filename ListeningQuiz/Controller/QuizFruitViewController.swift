@@ -77,8 +77,9 @@ class QuizFruitViewController: UIViewController {
     
     //按下選項同時計算分數
     @IBAction func answer(_ sender: UIButton) {
-        //將點選到的選項tag數值派給answerIndex
+        //經由點選tag來獲得原本在quizFruitArray的原始index
         let answerIndex = sender.tag
+        print( "原本quizFruitArray的index:\(answerIndex)")
         //此處currentQuizNumber - 1，是因為在loadTest的時候已經載入過一次的題目
         let contentList = quizFruitArray[currentQuizNumber - 1].answers
         let result = contentList[answerIndex].answerResult
@@ -93,7 +94,7 @@ class QuizFruitViewController: UIViewController {
         //判斷是否作答完所有題目
         if currentQuizNumber == quizFruitArray.count {
             print("題目作答結束，總分\(point)")
-            //作答結束的時候，經由id是“Results”的segue連到另一個controller
+            //作答結束的時候，經由id是“FruitResult”的segue連到另一個controller
             performSegue(withIdentifier: "FruitResult", sender: sender)
         }else {
             //沒回答完繼續載入下一題
@@ -104,7 +105,7 @@ class QuizFruitViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //設定controller的目的地是ResultViewController
         let controller = segue.destination as? ResultViewController
-        //把目前的得分point指派到ResultViewController的fruitScore變數
+        //把目前的得分point指派到ResultViewController的score變數
         controller?.score = point
     }
     
